@@ -1,0 +1,19 @@
+/*
+ *footer样式
+ */
+.footer{
+	padding-bottom: 10px;
+}
+.footer .links{
+	text-align: center;
+	color: #666666;
+	line-height: 30px;
+}
+.footer .link{
+	padding: 0 10px;
+}
+.footer .copyright{
+	text-align: center;
+	color: #666666;
+	line-height: 30px;
+}

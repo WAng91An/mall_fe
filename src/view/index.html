@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <%= require('html-loader!./layout/head-common.html')  %>
+       <title>电商平台课程设计</title>
+    </head>
+    <body>
+    	<%= require('html-loader!./layout/nav.html')  %>
+    	<%= require('html-loader!./layout/header.html')  %>
+    	<div class="page-wrap w">
+    		<%= require('html-loader!./layout/nav-side.html')  %>
+    		<div class="content with-nav">test</div>
+    	</div>
+    	<!--<div>
+    		<a class="link">text</a>
+    		<a class="link-text">text</a>
+    	</div> 
+    	<div>
+    		<a class="btn">text</a>
+    		<a class="btn btn-mini">text</a>
+    	</div> 
+    	<div>
+    		<div class="loading"></div>
+    	</div> -->
+    	<!--<div>
+    		<i class="fa fa-user"></i>
+    	</div> -->
+    	
+    	
+    	<%= require('html-loader!./layout/footer.html')  %>
+    </body>
+    
+</html>
