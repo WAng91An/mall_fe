@@ -1,5 +1,4 @@
-
-import _mm from 'util/mm';
+var _mm     = require('util/mm');
 
 var _cart = {
     // 获取购物车数量

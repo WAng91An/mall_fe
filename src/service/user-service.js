@@ -1,5 +1,5 @@
 
-import _mm from 'util/mm';
+var _mm     = require('util/mm');
 
 var _user = {
     // 用户登录
@@ -115,4 +115,5 @@ var _user = {
         });
     }
 }
+
 module.exports = _user;

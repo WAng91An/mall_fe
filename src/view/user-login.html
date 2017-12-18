@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <%= require('html-loader!./layout/head-common.html')  %>
+       <title><%= htmlWebpackPlugin.options.title%> - 课程设计</title>
+    </head>
+    <body>
+    	<%= require('html-loader!./layout/nav-simple.html')  %>
+    	<div class="page-wrap">
+    		<div class="w">
+    			<div class="user-con">
+    				<div class="user-title">用户登录</div>
+    				<div class="user-box">
+    					<div class="error-item">
+    						<i class="fa fa-minus-circle error-icon"></i>
+    						<p class="err-msg">Error</p>
+    					</div>
+    					<div class="user-item">
+    						<lable class="user-label" for="username">
+    							<i class="fa fa-user"></i>
+    						</lable>
+    						<input class="user-content" id="username" placeholder="请输入用户名" autocomplete="off" />
+    					</div>
+    					<div class="user-item">
+    						<lable class="user-label" for="password">
+    							<i class="fa fa-lock"></i>
+    						</lable>
+    						<input class="user-content" id="password" placeholder="请输入密码" autocomplete="off" />
+    					</div>
+    					<a  class="btn btn-submit">登陆</a>
+    					<div class="link-item">
+    						<a href="./user-pass-reset.html" target="_blank" class="link">忘记密码</a>
+    						<a href="./user-register.html" target="_blank" class="link">免费注册</a>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	<%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>

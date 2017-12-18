@@ -1,9 +1,10 @@
 require('./index.css');
-import _mm from 'util/mm';
+var _mm     = require('util/mm');
 
 //通用页面头部
 var header = {
 	init : function(){
+		this.onLoad();
 		this.bindEvent();
 	},
 	onLoad : function(){

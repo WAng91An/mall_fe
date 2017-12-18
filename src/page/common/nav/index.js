@@ -1,8 +1,8 @@
 
 require('./index.css');
-import _mm from 'util/mm';
-import _user from 'service/user-service';
-import _cart from 'service/cart-service';
+var _mm     = require('util/mm');
+var _user   = require('service/user-service');
+var _cart   = require('service/cart-service');
 
 // 导航
 var nav = {
@@ -41,7 +41,8 @@ var nav = {
 	        	var login    = document.getElementsByClassName('login')[0];
 	        	var userName = document.getElementsByClassName('username')[0];
 	        		notLogin.style.display  = 'none';
-	        		login.style.display		= '';
+	        		// to do 
+	        		login.style.display		= 'inline-block';
 	        		userName.innerHTML 		= res.username;
        	 }, 
         function(errMsg){
@@ -57,6 +58,6 @@ var nav = {
         	cartCount.innerHTML =  0;
         });
     }
-};
+}
 
 module.exports = nav.init();

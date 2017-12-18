@@ -3,7 +3,7 @@
  */
 var Hogan = require('hogan');
 var conf = {
-	serverHost : ''
+	serverHost : 'http://localhost:8080'
 };
 
 var _mm = {
@@ -78,7 +78,7 @@ var _mm = {
 	},
 	//统一 登陆处理
 	doLogin 	: function(){
-		window.location.href = './login.html?redirect =' + encodeURIComponent(window.location.href);
+		window.location.href = './user-login.html?redirect =' + encodeURIComponent(window.location.href);
 	},
 	goHome		: function(){
 		window.location.href = './index.html';

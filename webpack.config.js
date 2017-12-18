@@ -5,7 +5,7 @@ var HtmlWebpackPlugin   = require('html-webpack-plugin');
 
 // 环境变量配置，dev / online
 var WEBPACK_ENV         = process.env.WEBPACK_ENV || 'dev';
-const ASSET_PATH 		= process.env.ASSET_PATH || '/dist';
+const ASSET_PATH 		= process.env.ASSET_PATH || '/dist/';
 // 获取html-webpack-plugin参数的方法 
 var getHtmlConfig = function(name, title){
     return {
@@ -26,6 +26,8 @@ var config = {
     entry: {
         'common'            : ['./src/page/common/index.js'],
         'index'             : ['./src/page/index/index.js'],
+        'user-login'        : ['./src/page/user-login/index.js'],
+        'result'            : ['./src/page/result/index.js'],
     },
     output: {
         path:  __dirname +'/dist',
@@ -47,6 +49,7 @@ var config = {
         { 
         	test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, use: 'url-loader?limit=100&name=resource/[name].[ext]' 
         },
+        { test: /\.string$/, use: 'html-loader'},
     ]
   },
   resolve : {
@@ -66,6 +69,8 @@ var config = {
         }),
         new ExtractTextPlugin('css/[name].css'),
         new HtmlWebpackPlugin(getHtmlConfig('index', '首页')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-login', '用户登录')),
+        new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
     ]
 };
 
