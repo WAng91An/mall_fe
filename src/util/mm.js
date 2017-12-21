@@ -3,7 +3,7 @@
  */
 var Hogan = require('hogan');
 var conf = {
-	serverHost : 'http://localhost:8080'
+	serverHost : ''
 };
 
 var _mm = {
@@ -14,7 +14,7 @@ var _mm = {
 			type  		: param.method || 'get',
 			url   		: param.url    || '',
 			dataType	: param.type   || 'json',
-			daa         : param.data   || '',
+			data        : param.data   || '',
 			success     : function(res){
 				//请求成功
 				if(0 === res.status){

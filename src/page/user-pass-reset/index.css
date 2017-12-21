@@ -1,11 +1,11 @@
 /*
- * 登陆样式
+ * 找回密码样式
  */
 
 /* 最外层容器 */
 .page-wrap{
 	padding: 40px 0;
-	background: #E72955;
+	/*background: #E72955;*/
 }
 
 /* 用户表单框 */
@@ -50,6 +50,15 @@
 .user-con .user-item{
 	position: relative;
 	margin-bottom: 20px;
+}
+/* 每一步的容器 */
+.user-con .step-con{
+	display: none;
+}
+/* 输入框 提示信息 */
+.user-con .user-item-text{
+	margin-bottom: 10px;
+	font-size: 14px;
 }
 .user-con .user-item .user-label{
 	position: absolute;

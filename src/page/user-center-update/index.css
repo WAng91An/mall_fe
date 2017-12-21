@@ -1,0 +1,25 @@
+/*
+ * 
+ * 修改个人中心样式
+ */
+.form-line{
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+.form-line .label{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+.panel .btn-mini{
+	margin-left: 60px;
+	cursor: pointer;
+}
+.form-line .input{
+    height: 25px;
+    line-height: 25px;
+    width: 200px;
+    font-size: 12px;
+}

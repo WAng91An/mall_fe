@@ -1,5 +1,6 @@
 /*
  * result的逻辑
+ * 1.根据url判断是注册成功？操作成功？
  */
 
 require('./index.css');

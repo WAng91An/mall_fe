@@ -1,4 +1,11 @@
-
+/*
+ * 头部导航逻辑部分
+ * 1.点击登陆到登陆页面
+ * 2.点击注册到注册页面
+ * 3.点击退出调用注销接口
+ * 4.加载用户信息 欢迎您
+ * 5.加载购物车数量
+ */
 require('./index.css');
 var _mm     = require('util/mm');
 var _user   = require('service/user-service');
@@ -33,7 +40,7 @@ var nav = {
             });
         }
     },
-    // 加载用户信息
+    	// 加载用户信息
         loadUserInfo : function(){
         _user.checkLogin(
         	function(res){
@@ -43,7 +50,7 @@ var nav = {
 	        		notLogin.style.display  = 'none';
 	        		// to do 
 	        		login.style.display		= 'inline-block';
-	        		userName.innerHTML 		= res.username;
+	        		userName.innerHTML 		=  res.username;
        	 }, 
         function(errMsg){
             // do nothing

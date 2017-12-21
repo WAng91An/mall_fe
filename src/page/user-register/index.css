@@ -1,10 +1,10 @@
 /*
- * 登陆样式
+ * 注册样式
  */
 
 /* 最外层容器 */
 .page-wrap{
-	padding: 40px 0;
+	padding: 40px 1;
 	background: #E72955;
 }
 

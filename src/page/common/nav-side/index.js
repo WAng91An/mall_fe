@@ -1,5 +1,7 @@
 /*
  * nav-side js逻辑
+ * 1.渲染导航内容，根据传进来的值，把相应的页面导航变成active
+ * 2.把渲染后的html放入容器
  */
 require('./index.css');
 var _mm     		  = require('util/mm');
@@ -13,7 +15,7 @@ var navSide = {
 		navList	: [
 			{name : 'user-center', desc : '个人中心',  href : './user-center.html'},
 			{name : 'order-list',  desc : '我的订单',  href : './order-list.html'},
-			{name : 'pass-update', desc : '修改密码',  href : './pass-update.html'},
+			{name : 'user-pass-update', desc : '修改密码',  href : './user-pass-update.html'},
 			{name : 'about',       desc : '关于WMall', href : './about.html'}
 		]
 	},
