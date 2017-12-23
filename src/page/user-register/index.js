@@ -1,14 +1,11 @@
 /*
  * 注册逻辑 
+ * 
+ * 1. 异步验证用户名是不是存在
+ * 2. 验证username 是不是合法，存不存在
+ * 3.注册登陆按钮，查看是不是合法，合法就调用注册接口，成功调到结果页面
  */
 
-
-
-/*
- * 登陆逻辑
- * 1.点击登陆按钮，信息验证
- * 2.验证信息包括格式，为空，存不存在
- */
 require('./index.css');
 require('page/common/nav-simple/index.js');
 var _mm         = require('util/mm');

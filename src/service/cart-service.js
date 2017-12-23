@@ -1,3 +1,6 @@
+/*
+ * 购物车的网络请求
+ */
 var _mm     = require('util/mm');
 
 var _cart = {

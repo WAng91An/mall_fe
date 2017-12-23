@@ -1,5 +1,7 @@
 /*
  * 用户中心逻辑
+ * 1. 初始化左侧菜单
+ * 2.加载用户信息
  */
 
 require('./index.css');
@@ -35,6 +37,6 @@ var page = {
         });
     }
 };
-$(function(){
-    page.init();
-});
+window.onload = function(){
+	 page.init();
+}

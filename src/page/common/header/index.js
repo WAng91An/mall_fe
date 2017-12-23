@@ -1,3 +1,10 @@
+/**
+ * 1. keyword 存在，则回填输入框
+ * 2. 点击Go后做搜索提交
+ * 3. 输入回车后，做搜索提交
+ * 4. 提交的时候有keyword,正常跳转到list页面
+ * 5. 如果keyword为空，直接回到首页面
+ */
 require('./index.css');
 var _mm     = require('util/mm');
 

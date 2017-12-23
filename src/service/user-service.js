@@ -1,4 +1,7 @@
-
+/*
+ * 
+ * 用户登录网络请求
+ */
 var _mm     = require('util/mm');
 
 var _user = {

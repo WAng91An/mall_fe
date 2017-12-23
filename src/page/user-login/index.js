@@ -2,6 +2,7 @@
 /*
  * 登陆逻辑
  * 1.点击登陆按钮，信息验证
+ * 2.按下回车，提交表单
  */
 require('./index.css');
 require('page/common/nav-simple/index.js');
@@ -22,6 +23,7 @@ var formError = {
 		errMsgShow.innerHTML 	= '';
 	}
 }
+
 var page = {
 	init : function(){
 		this.bindEvent();
@@ -41,6 +43,7 @@ var page = {
 			}
 		}
 	},
+	//点击提交的方法，是否合法，合法就跳转
 	submit	  : function(){
 		var usernameVal = document.getElementById('username').value;
 		var passwordVal = document.getElementById('password').value;
