@@ -21,7 +21,7 @@ var page = {
 			categoryId  : _mm.getUrlParam('categoryId') || '',
 			orderBy 	: _mm.getUrlParam('orderBy')  	|| 'default',
 			pageNum 	: _mm.getUrlParam('pageNum')    || 1,   //第几页
-			pageSize 	: _mm.getUrlParam('pageSize')   || 3   // 页面的大小
+			pageSize 	: _mm.getUrlParam('pageSize')   || 10   // 页面的大小
 		}
 	},
 	init : function(){

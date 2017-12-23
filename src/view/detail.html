@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%= require('html-loader!./layout/head-common.html')  %>
+        <title><%= htmlWebpackPlugin.options.title%> - 课程设计</title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav.html')  %>
+        <%= require('html-loader!./layout/header.html')  %>
+        <!-- 面包屑导航 -->
+        <div class="crumb">
+            <div class="w">
+                <div class="crumb-con">
+                    <a class="link" href="./index.html">WMall</a>
+                    <span>></span>
+                    <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+                </div>
+            </div>
+        </div>
+          <!-- 商品详情结构 -->
+        <div class="page-wrap w">
+        	 <!-- 下面是渲染出来的  -->
+            <!--<div class="intro-wrap">
+            	<div class="p-img-con">
+            		<div class="main-img-con">
+            			<img class="main-img" src="http://image.qian.com/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg" alt="xxx"/>
+            		</div>
+            		<ul class="p-img-list">
+            			<li class="p-img-item"><img class="p-img" src="http://image.qian.com/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg" alt="xxx"/></li>
+            			<li class="p-img-item"><img class="p-img" src="http://image.qian.com/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg" alt="xxx"/></li>
+            			<li class="p-img-item"><img class="p-img" src="http://image.qian.com/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg" alt="xxx"/></li>
+            			<li class="p-img-item"><img class="p-img" src="http://image.qian.com/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg" alt="xxx"/></li>
+            			<li class="p-img-item"><img class="p-img" src="http://image.qian.com/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg" alt="xxx"/></li>
+            		</ul>
+            	</div>
+            	<div class="p-info-con">
+            		<h1 class="p-name">手机</h1>
+            		<p class="p-subtitle">手机描述信息</p>
+            		<div class="p-info-item p-price-con">
+            			<span class="label">价格：</span>
+            			<span class="info">￥111</span>
+            		</div>
+            		
+            		<div class="p-info-item">
+            			<span class="label">库存：</span>
+            			<span class="info">￥111</span>
+            		</div>
+            		
+            		<div class="p-info-item p-count-con">
+            			<span class="label">数量：</span>
+            			<input readonly="" value="1" class="p-count" />
+            			<span class="p-count-btn plus">+</span>
+            			<span class="p-count-btn minus">-</span>
+            		</div>
+            		
+            		<div class="p-info-item">
+            			<a class="btn cart-add">加入购物车</a>
+            		</div>
+            	</div>
+            	
+            </div>
+            <div class="detail-wrap">
+            	<div class="detail-tab-con">
+            		<ul class="tab-list">
+            			<li class="tab-item active">详细描述</li>
+            		</ul>
+            	</div>
+            	<div class="detail-con">
+            		detail
+            	</div>
+            </div>-->
+        </div>
+        <%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>

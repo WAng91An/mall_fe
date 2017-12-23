@@ -7,6 +7,7 @@
     <body>
         <%= require('html-loader!./layout/nav.html')  %>
         <%= require('html-loader!./layout/header.html')  %>
+        <!-- 面包屑导航 -->
         <div class="crumb">
             <div class="w">
                 <div class="crumb-con">
@@ -16,6 +17,7 @@
                 </div>
             </div>
         </div>
+        <!-- 排序两个按钮 -->
         <div class="page-wrap w">
             <ul class="sort-con">
                 <li class="sort-item active" data-type="default">默认排序</li>
@@ -27,11 +29,12 @@
             </ul>
             <!-- list 容器 -->
             <ul class="p-list-con">
+            	//渲染
                 <div class="loading"></div>
             </ul>
             <!-- 分页容器 -->
             <div class="pagination">
-            	
+            	//渲染
             </div>
         </div>
         <%= require('html-loader!./layout/footer.html')  %>
