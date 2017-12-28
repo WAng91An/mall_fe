@@ -1,0 +1,5 @@
+ <div class="payment-tips">订单提交成功，请尽快支付！您的订单号是:{{orderNo}}</div>
+	<div class="payment-tips remind">请使用支付宝扫描下面的二维码:</div>
+	<div class="img-con">
+		<img src="{{qrUrl}}" alt="支付宝二维码" class="qr-code"/>
+	</div>

@@ -22,7 +22,7 @@ var page = {
 		this.bindEvent();
 	},
 	onLoad : function(){
-		//没穿productId回家啊~
+		//没有productId回家啊~
 		if(!this.data.productId){
 			_mm.goHome();
 		}
@@ -31,31 +31,32 @@ var page = {
 	bindEvent : function(){
 		var _this = this;
         // 图片预览
-        
-         document.addEventListener('mouseenter',function(e){
-         	if(e.target.className == 'p-img-item'){
+         document.addEventListener('mouseover',function(e){
+         	if(e.target.className == 'p-img'){
          		var mainImg  = document.getElementsByClassName('main-img')[0];
-         		var imageUrl = e.target.children[0].getAttribute('src');
+         		var imageUrl = e.target.getAttribute('src');
          		mainImg.setAttribute('src',imageUrl)
          	}
          });
         // count的操作
-        document.addEventListener('click',function(e){
-        		var pCount 		= document.getElementsByClassName('p-count')[0];
+         document.addEventListener('click',function(e){
+         	if(_mm.hasClass(e.target,'p-count-btn')){
+         		var pCount 		= document.getElementsByClassName('p-count')[0];
         		var currCount   = parseInt(pCount.value);
         		var minCount    = 1;
               	var maxCount    = _this.data.detailInfo.stock || 1;
-        	if(e.target.className == 'p-count-btn plus'){
-                pCount.value = (currCount < maxCount ? currCount + 1 : maxCount);
-        	}else if(e.target.className == 'p-count-btn minus'){
-        		 pCount.value = (currCount > minCount ? currCount - 1 : minCount);
-        	}
-        		
+              	var type 		= _mm.hasClass(e.target,'plus') ? 'plus' : 'minus';
+              	if(type == 'plus'){
+                	pCount.value = (currCount < maxCount ? currCount + 1 : maxCount);
+	        	}else if(type == 'minus'){
+	        		 pCount.value = (currCount > minCount ? currCount - 1 : minCount);
+	        	}
+         	}
         });
         // 加入购物车
          document.addEventListener('click',function(e){
          	var pCount 	= document.getElementsByClassName('p-count')[0];
-         	if(e.target.className == 'cart-add'){
+         	if(_mm.hasClass(e.target,'cart-add')){
 	         		_cart.addToCart({
 	                productId   : _this.data.productId,
 	                count       : pCount.value
@@ -66,16 +67,7 @@ var page = {
 	            });
          	}
          });
-        $(document).on('click', '.cart-add', function(){
-            _cart.addToCart({
-                productId   : _this.data.productId,
-                count       : $('.p-count').val()
-            }, function(res){
-                window.location.href = './result.html?type=cart-add';
-            }, function(errMsg){
-                _mm.errorTips(errMsg);
-            });
-        });
+       
 	},
 	//加载商品详情
 	loadDetail : function(){

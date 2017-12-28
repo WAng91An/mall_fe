@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%= require('html-loader!./layout/head-common.html')  %>
+        <title><%= htmlWebpackPlugin.options.title%> - 课程设计</title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav.html')  %>
+        <%= require('html-loader!./layout/header.html')  %>
+        <!-- 面包屑导航 -->
+        <div class="crumb">
+            <div class="w">
+                <div class="crumb-con">
+                    <a class="link" href="./index.html">WMall</a>
+                    <span>></span>
+                    <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+                </div>
+            </div>
+        </div>
+          <!-- 详情结构 -->
+        <div class="page-wrap w">
+        	<!-- 下面是渲染出来的  -->
+        	 <%= require('html-loader!./layout/nav-side.html')  %>
+            <div class="content with-nav">
+                <div class="panel">
+                    <div class="panel-title"><%= htmlWebpackPlugin.options.title%></div>
+                    <div class="panel-body">
+                        <!--<div class="loading"></div>-->
+                        <div class="order-list-con">
+                        	<!--<table class="order-list-table header">
+                        		<tr>
+                        			<th class="cell cell-img">&nbsp;</th>
+                        			<th class="cell cell-info">商品信息</th>
+                        			<th class="cell cell-price">单价</th>
+                        			<th class="cell cell-count">数量</th>
+                        			<th class="cell cell-total">小计</th>
+                        		</tr>
+                        	</table>
+                        	<table class="order-list-table order-item">
+                        		<tr>
+                        			<td colspan="5" class="order-info">
+                        				<span class="order-text">
+                        					<span>订单号:</span>
+                        					<a href="./order-detail.html?orderNumber=" class="link order-number">NO11111</a>
+                        				</span>
+                        				<span class="order-text">
+                        					2017-12-28
+                        				</span>
+                        				<span class="order-text">
+                        					收件人：xxxx
+                        				</span>
+                        				<span class="order-text">
+                        					订单状态：xxx
+                        				</span>
+                        				<span class="order-text">
+                        					<span>订单总价：</span>
+                        					<span class="order-total">￥xxx</span>
+                        					<a href="./order-detail.html?orderNumber=" class="link order-detail">查看详情></a>
+                        				</span>
+                        			</td>
+                        		</tr>
+                        		<tr>
+                        			<td class="cell cell-img">
+                        				<a href="./detail.html?productId=" target="_blank"><img src="http://image.qian.com/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg" alt="" class="p-img" /></a>
+                        			</td>
+                        			<td class="cell cell-info">
+                        				<a href="./detail.html?productId=" class="link" target="_blank">手机xxxxxxx</a>
+                        			</td>
+                        			<td class="cell cell-price">￥123</td>
+                        			<td class="cell cell-count">12</td>
+                        			<td class="cell cell-total">￥123</td>
+                        		</tr>
+                        	</table>-->
+                        </div>
+                        <div class="pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>

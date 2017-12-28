@@ -87,6 +87,7 @@ input[type='checkbox']{
 	color: #FFFFFF;
 	outline: pointer;
 	text-decoration: none;
+	cursor: pointer;
 }
 .btn-mini{
 	height: 25px;

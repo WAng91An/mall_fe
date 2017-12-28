@@ -21,7 +21,7 @@ var page = {
 			categoryId  : _mm.getUrlParam('categoryId') || '',
 			orderBy 	: _mm.getUrlParam('orderBy')  	|| 'default',
 			pageNum 	: _mm.getUrlParam('pageNum')    || 1,   //第几页
-			pageSize 	: _mm.getUrlParam('pageSize')   || 10   // 页面的大小
+			pageSize 	: _mm.getUrlParam('pageSize')   || 5   // 页面的大小
 		}
 	},
 	init : function(){
@@ -50,16 +50,6 @@ var page = {
 		 				_mm.removeClass(this.nextElementSibling,'desc');
 		 				_this.data.listParam.orderBy = 'default';
 		 			}
-		 			/*下面是H5 API，但是有兼容问题
-		 			if(this.classList.contains('active')){
-		 				return;
-		 			}else{
-		 				this.classList.add('active');
-		 				this.nextElementSibling.classList.remove('active');
-		 				this.nextElementSibling.classList.remove('asc');
-		 				this.nextElementSibling.classList.remove('desc');
-		 				 _this.data.listParam.orderBy = 'default';
-		 			}*/
 		 		}else if(this.getAttribute('data-type') == 'price'){
 		 			 // active class 的处理
 		 			if(!_mm.hasClass(this,'active')){
@@ -78,21 +68,6 @@ var page = {
 		 				_mm.removeClass(this,'asc');
 		 				_this.data.listParam.orderBy = 'price_desc';
 		 			}
-		 			 /* 下面是H5api的处理方法，有兼容问题
-			 		 	this.classList.add('active');
-			 		 	this.previousElementSibling.classList.remove('active');
-			 		 	this.previousElementSibling.classList.remove('asc');
-			 		 	this.previousElementSibling.classList.remove('desc');
-			 		 	  升序、降序的处理
-		                if(!this.classList.contains('asc')){
-		                    this.classList.add('asc');
-		                    this.classList.remove('desc');
-		                    _this.data.listParam.orderBy = 'price_asc';
-		                }else{
-		                    this.classList.add('desc');
-		                    this.classList.remove('asc');
-		                    _this.data.listParam.orderBy = 'price_desc';
-		                }*/
 		 		}
 		 		// 重新加载列表
            		 _this.loadList();

@@ -1,0 +1,14 @@
+/*
+ * 关于样式
+ */
+
+.about-title{
+	font-size: 18px;
+	color: #666666;
+	margin-bottom: 20px;
+}
+.about-con .text{
+	margin-bottom: 10px;
+	font-size: 12px;
+	
+}

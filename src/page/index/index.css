@@ -24,7 +24,8 @@
     background: #999;
 }
 .keywords-list .keywords-item .link{
-    margin-right: 6px;
+	margin-left: 3px;
+    margin-right: 7px;
     color: #fff;
 }
 .keywords-list .keywords-item .link:hover{

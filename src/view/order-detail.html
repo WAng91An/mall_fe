@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%= require('html-loader!./layout/head-common.html')  %>
+        <title><%= htmlWebpackPlugin.options.title%> - 课程设计</title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav.html')  %>
+        <%= require('html-loader!./layout/header.html')  %>
+        <!-- 面包屑导航 -->
+        <div class="crumb">
+            <div class="w">
+                <div class="crumb-con">
+                    <a class="link" href="./index.html">WMall</a>
+                    <span>></span>
+                    <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+                </div>
+            </div>
+        </div>
+          <!-- 详情结构 -->
+        <div class="page-wrap w">
+        	 <%= require('html-loader!./layout/nav-side.html')  %>
+            <div class="content with-nav">
+                <!--<div class="panel">
+                    <div class="panel-title"><%= htmlWebpackPlugin.options.title%></div>
+                    <div class="panel-body">
+                    	<div class="order-info">
+                    		<div class="text-line">
+                    			<span class="text">订单号：xxx</span>
+                    			<span class="text">创建时间：xxx</span>
+                    		</div>
+                    		<div class="textline">
+                    			<span class="text">收件人： 王瑞钱 济南 济南大学 address phone</span>
+                    		</div>
+                    		<div class="textline">
+                    			<span class="text">订单状态：xxx</span>
+                    		</div>
+                    		<div class="textline">
+                    			<span class="text">支付方式：xxx</span>
+                    		</div>
+                    		<div class="textline">
+                    			<a href="./payment.html?orderNumber=xxx" class="btn">去支付</a>
+                    			<a class="btn order-cancel">取消订单</a>
+                    		</div>
+                    	</div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-title">商品清单</div>
+                    <div class="panel-body">
+                    <table class="product-table header">
+						<tr>
+							<th class="cell cell-img">&nbsp;</th>
+							<th class="cell cell-info">商品信息</th>
+							<th class="cell cell-price">单价</th>
+							<th class="cell cell-count">数量</th>
+							<th class="cell cell-total">小计</th>
+						</tr>
+						<tr>
+							<td class="cell cell-img">
+								<a href="./detail.html?productId={{productId}}" target="_blank"><img src="{{imageHost}}{{productImage}}" alt="{{productName}}" class="p-img" /></a>
+							</td>
+							<td class="cell cell-info">
+								<a href="./detail.html?productId={{productId}}" class="link" target="_blank">{{productName}}</a>
+							</td>
+							<td class="cell cell-price">￥{{currentUnitPrice}}</td>
+							<td class="cell cell-count">{{quantity}}</td>
+							<td class="cell cell-total">￥{{totalPrice}}</td>
+						</tr>
+					</table>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>

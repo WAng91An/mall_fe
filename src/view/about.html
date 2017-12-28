@@ -7,7 +7,6 @@
     <body>
         <%= require('html-loader!./layout/nav.html')  %>
         <%= require('html-loader!./layout/header.html')  %>
-        <!-- 面包屑导航 -->
         <div class="crumb">
             <div class="w">
                 <div class="crumb-con">
@@ -17,24 +16,25 @@
                 </div>
             </div>
         </div>
-        <!-- 排序两个按钮 -->
         <div class="page-wrap w">
-            <ul class="sort-con">
-                <li class="sort-item active" data-type="default">默认排序</li>
-                <li class="sort-item" data-type="price">
-                    <span>价格</span>
-                    <i class="fa fa-sort-asc"></i>
-                    <i class="fa fa-sort-desc"></i>
-                </li>
-            </ul>
-            <!-- list 容器 -->
-            <ul class="p-list-con">
-            	<!-- 渲染 -->
-                <div class="loading"></div>
-            </ul>
-            <!-- 分页容器 -->
-            <div class="pagination">
-            	<!-- 渲染 -->
+            <%= require('html-loader!./layout/nav-side.html')  %>
+            <div class="content with-nav">
+                <div class="panel">
+                    <div class="panel-title"><%= htmlWebpackPlugin.options.title%></div>
+                    <div class="panel-body">
+						
+						<div class="about-title">
+							声明：
+						</div>
+						<div class="about-con">
+							<div class="text">此WMall主题电商网站为：
+							计软 1503 王瑞乾 课程设计</div>
+							<div class="text">此网站的所有商品为虚拟，学习测试使用</div>
+							
+						</div>
+
+                    </div>
+                </div>
             </div>
         </div>
         <%= require('html-loader!./layout/footer.html')  %>

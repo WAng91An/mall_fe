@@ -12,7 +12,7 @@ var _mm             = require('util/mm.js');
 $(function() {
 	// 渲染banner的html
 	var bannerCon 		= document.getElementsByClassName('banner-con')[0];
-    var bannerHtml  = _mm.renderHtml(templateBanner);
+    var bannerHtml      = _mm.renderHtml(templateBanner);
    	bannerCon.innerHTML = bannerHtml;
     // 初始化banner
     var banner = document.getElementsByClassName('banner')[0];

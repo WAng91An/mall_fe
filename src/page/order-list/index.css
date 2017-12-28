@@ -1,0 +1,79 @@
+/*
+ * 我的订单 样式
+ * 
+ */
+
+/* 表头 */
+.order-list-table{
+	width: 100%;
+	border-collapse: collapse;
+	background: #FAFAFA;
+	margin-bottom: 20px;
+	
+}
+.order-list-table .cell{ 
+	padding:10px 0px;
+	color: #666666;
+	border-bottom: 1px solid #EEEEEE;
+}
+.order-list-table.header{
+	background: #EEEEEE;
+}
+/* 订单信息等 */
+.order-list-table .order-info{
+	background: #EEEEEE;
+	padding: 10px 0px;
+	color: #999999;
+}
+.order-list-table .order-info .order-text{
+	margin-left: 5px;
+	margin-right: 25px;
+}
+.order-list-table .order-info .order-number{
+	font-weight: bold;
+	
+}
+.order-list-table .order-info .order-total{
+	color: #C60023;
+	font-weight: bold;
+}
+.order-list-table .order-info .order-detail{
+	margin-right: 2px;
+	float: right;
+}
+
+/** 商品内容 */
+.order-list-table  .cell-img .p-img{
+	width: 80px;
+	height: 80px;
+	border: 1px solid #DDDDDD;
+}
+.order-list-table  .cell-info{
+	width: 30%;
+	text-align: left;
+}
+.order-list-table  .cell-price{
+	width: 20%;
+	font-weight: bold;
+	text-align: center;
+}
+.order-list-table  .cell-total{
+	font-weight: bold;
+	width: 20%;
+	text-align: center;
+}
+.order-list-table .cell-count{
+	width: 20%;
+	text-align: center;
+}
+
+/* 错误信息 */
+.err-tip{
+    height: 60px;
+    line-height: 60px;
+    color: #f60;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background: #eee;
+}

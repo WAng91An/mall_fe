@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%= require('html-loader!./layout/head-common.html')  %>
+        <title><%= htmlWebpackPlugin.options.title%> - 课程设计</title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav.html')  %>
+        <%= require('html-loader!./layout/header.html')  %>
+        <!-- 面包屑导航 -->
+        <div class="crumb">
+            <div class="w">
+                <div class="crumb-con">
+                    <a class="link" href="./index.html">WMall</a>
+                    <span>></span>
+                    <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+                </div>
+            </div>
+        </div>
+          <!-- 详情结构 -->
+        <div class="page-wrap w">
+        	<!-- 下面是渲染出来的  -->
+        	<div class="panel">
+        		<h1 class="panel-title">收货地址</h1>
+        		<div class="panel-body address-con">
+        			<!--<div class="address-item">
+        				<div class="address-title">
+        					北京 北京 （王瑞乾收）
+        				</div>
+        				<div class="address-detail">
+        					济南大学 17554176692
+        				</div>
+        				<div class="address-opera">
+        					<span class="link address-update">编辑</span>
+        					<span class="link address-delete">删除</span>
+        				</div>
+        			</div>
+        			<div class="address-item">
+        				<div class="address-title">
+        					北京 北京 （王瑞乾收）
+        				</div>
+        				<div class="address-detail">
+        					济南大学 17554176692
+        				</div>
+        				<div class="address-opera">
+        					<span class="link address-update">编辑</span>
+        					<span class="link address-delete">删除</span>
+        				</div>
+        			</div>
+        			<div class="address-item address-add">
+        				<div class="address-new">
+        					<i class="fa fa-plus"></i>
+        					<div class="text">使用新地址</div>
+        				</div>
+        			</div>-->
+        		</div>
+        	</div>
+        	<div class="panel">
+        		<h1 class="panel-title">商品清单</h1>
+        		<div class="panel-body product-con">
+        			<!--<table class="product-table">
+        				<tr>
+        					<th class="cell-img">&nbsp;</th>
+        					<th class="cell-info">商品描述</th>
+        					<th class="cell-price">价格</th>
+        					<th class="cell-count">数量</th>
+        					<th class="cell-total">小计</th>
+        				</tr>
+        				<tr>
+        					<td class="cell-img">
+        						<a  target="_blank" href="./detail.html?productId=">
+        							<img src="http://image.qian.com/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg" alt="xxx" class="p-img" />
+        						</a>
+        					</td>
+        					<td class="cell-info">
+        						<a target="_blank" href="./detail.html?productId=xxx" class="link">ThinkPad 笔记本</a>
+        					</td>
+        					<td class="cell-price">￥111</td>
+        					<td class="cell-count">111</td>
+        					<td class="cell-total">￥111</td>
+        				</tr>
+        				<tr>
+        					<td class="cell-img">
+        						<a  target="_blank" href="./detail.html?productId=">
+        							<img src="http://image.qian.com/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg" alt="xxx" class="p-img" />
+        						</a>
+        					</td>
+        					<td class="cell-info">
+        						<a target="_blank" href="./detail.html?productId=xxx" class="link">ThinkPad 笔记本</a>
+        					</td>
+        					<td class="cell-price">￥111</td>
+        					<td class="cell-count">111</td>
+        					<td class="cell-total">￥111</td>
+        				</tr>
+        			</table>
+        			<div class="submit-con">
+        				<span>订单总价:</span>
+        				<span class="submit-total">￥111</span>
+        				<span class="btn order-submit">提交订单</span>
+        				
+        			</div>-->
+        		</div>
+        	</div>
+        	<div class="modal-wrap">
+        		<!--<div class="modal">
+        			<div class="modal-container">
+        				<div class="modal-header">
+        					<div class="modal-title">创建新地址</div>
+        					<i class="fa fa-close close"></i>
+        				</div>
+        				<div class="modal-body">
+        					<form class="form">
+        						<div class="form-line">
+        							<label for="receiver-name" class="label">
+        								<span class="required">*</span>收件人姓名：</label>
+        							<input type="text" class="form-item" id="receiver-name" placeholder="请输入收件人姓名" />
+        						</div>
+        						<div class="form-line">
+        						<label for="receiver-province" class="label"><span class="required">*</span>
+        							所在城市：</label>
+        							<select class="form-item" id="receiver-province">
+        								<option>北京</option>
+        							</select>
+        							<select class="form-item" id="receiver-city">
+        								<option>北京</option>
+        							</select>
+        						</div>	
+    							<div class="form-line">
+	    							<label for="receiver-address" class="label">
+	    								<span class="required">*</span>详细地址：</label>
+	    							<input type="text"  class="form-item"  id="receiver-address" placeholder="请精确到门牌号" />
+    							</div>
+    							<div class="form-line">
+	    							<label for="receiver-phone" class="label"><span class="required">*</span>手机号：</label>
+	    							<input type="text" class="form-item" id="receiver-phone" placeholder="请输入手机号" />
+    							</div>
+    							<div class="form-line">
+	    							<label for="receiver-zip" class="label">邮政编码：</label>
+	    							<input type="text" class="form-item"  id="receiver-zip" placeholder="如：100000" />
+    							</div>
+    							<div class="form-line"><a  class="btn address-btn">保存收获地址</a></div>
+        					</form>
+        				</div>
+        			</div>-->
+        		</div>
+        	</div>
+        </div>
+        <%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>

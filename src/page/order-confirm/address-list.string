@@ -1,0 +1,25 @@
+{{#list}}
+	{{#isActive}}
+	<div class="address-item address-exist active" data-id="{{id}}">
+	{{/isActive}}
+	{{^isActive}}
+	<div class="address-item address-exist" data-id="{{id}}">
+	{{/isActive}}
+	<div class="address-exist address-title">
+		{{receiverCity}} {{receiverProvince}} ( {{receiverName}} 收 )
+	</div>
+	<div class="address-detail address-exist">
+		{{receiverAddress}} {{receiverPhone}}
+	</div>
+	<div class="address-opera address-exist">
+		<span class="link address-update">编辑</span>
+		<span class="link address-delete">删除</span>
+	</div>
+</div>
+{{/list}}
+<div class="address-add address-no-exist">
+	<div class="address-new address-no-exist">
+		<i class="fa fa-plus address-no-exist"></i>
+		<div class="text address-no-exist">使用新地址</div>
+	</div>
+</div>

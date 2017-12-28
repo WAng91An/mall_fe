@@ -1,0 +1,29 @@
+/*
+ * 支付页面样式
+ */
+.page-wrap{
+	background: #FFFFFF;
+	padding: 10px 0px 25px 0px;
+}
+.page-wrap .payment-tips{
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #555555;
+	text-align: center;
+}
+.page-wrap .remind{
+	color: #FF0000;
+}
+.page-wrap .img-con{
+	margin: 0 auto;
+	width: 300px;
+	height: 300px;
+	background: #FFFFFF;
+	border: 1px solid #DDDDDD;
+}
+.page-wrap .img-con .qr-code{
+	width: 100%;
+	height: 100%;
+}
