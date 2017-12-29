@@ -1,0 +1,104 @@
+/*
+ * nav 模块
+ */
+
+.nav{
+	background: #EEEEEE;
+	height: 30px;
+	line-height: 30px;
+}
+/* 用户部分 */
+.nav .user{
+	float: left;
+}
+
+.nav .user.login{
+	display: none;
+}
+.nav .user .link{
+	margin-right: 5px;
+}
+/* 导航链接部分 */
+.nav .nav-list{
+	float: right;
+}
+.nav .nav-list .nav-item{
+	display: inline-block;
+	margin-left: 5px;
+}
+/*
+ * 通用头部导航
+ */
+.header .search-con{
+	padding: 40px 0 30px 250px;
+}
+.header .logo{
+	text-decoration: none;
+	position: absolute;
+	display: block;
+	font-size: 36px;
+	color: #C60023;
+	left: 60px;
+	top: 35px;
+	font-weight: bold;
+}
+.header .search-con .search-input{
+	width: 500px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	font-size: 15px;
+	border: 2px solid #C60023;
+	outline: none;
+}
+.header .search-con .search-btn{
+	position: absolute;
+	height: 44px;
+}
+/* 面包屑 导航 */
+.crumb{
+	margin-bottom: 15px;
+	height: 50px;
+	line-height: 50px;
+	background: #EEEEEE;
+	color: #888888;
+	font-size: 14px;
+	border-top: 2px solid #C60023;
+}
+/*
+ * 商品详情样式
+ */
+
+/* 排序按钮 */
+.sort-con{
+    overflow: auto;
+}
+.sort-con .sort-item{
+    float: left;
+    display: inline-block;
+    position: relative;
+    padding: 0 8px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+}
+.sort-con .sort-item.active{
+    background: #c60023;
+    border: 1px solid #c60023;
+    color: #fff;
+}
+.sort-con .sort-item .fa-sort-desc{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.sort-con .sort-item.asc .fa-sort-desc{
+    opacity: .6;
+}
+.sort-con .sort-item.desc .fa-sort-asc{
+    opacity: .6;
+}

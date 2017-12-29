@@ -4,17 +4,20 @@
 .header .search-con{
 	padding: 40px 0 30px 250px;
 }
-.header .logo{
+.header .logo img{
 	text-decoration: none;
 	position: absolute;
 	display: block;
-	font-size: 36px;
+	/*font-size: 36px;*/
+	height: 90px;
+	width: 90px;
 	color: #C60023;
-	left: 60px;
-	top: 35px;
+	left: 90px;
+	top: 20px;
 	font-weight: bold;
 }
 .header .search-con .search-input{
+	margin-left: 30px;
 	width: 500px;
 	height: 40px;
 	line-height: 40px;
@@ -22,10 +25,15 @@
 	font-size: 15px;
 	border: 2px solid #C60023;
 	outline: none;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	
 }
 .header .search-con .search-btn{
 	position: absolute;
 	height: 44px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 /* 面包屑 导航 */
 .crumb{

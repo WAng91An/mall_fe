@@ -66,7 +66,7 @@ Pagination.prototype.render = function(userOption){
 	_this.data.listParam.pageNum = pageNum;
 	_this.loadList();
 }
- 获取分页的html, |上一页| 2 3 4 =5= 6 7 8|下一页|  5/9
+ 获取分页的html, |上一页| 2 3 4 =5= 6 7 8|下一页|  7/9
  */
 Pagination.prototype.getPaginationHtml = function(){
     var html        = '',

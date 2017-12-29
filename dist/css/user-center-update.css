@@ -1,0 +1,120 @@
+/*
+ * nav 模块
+ */
+
+.nav{
+	background: #EEEEEE;
+	height: 30px;
+	line-height: 30px;
+}
+/* 用户部分 */
+.nav .user{
+	float: left;
+}
+
+.nav .user.login{
+	display: none;
+}
+.nav .user .link{
+	margin-right: 5px;
+}
+/* 导航链接部分 */
+.nav .nav-list{
+	float: right;
+}
+.nav .nav-list .nav-item{
+	display: inline-block;
+	margin-left: 5px;
+}
+/*
+ * 通用头部导航
+ */
+.header .search-con{
+	padding: 40px 0 30px 250px;
+}
+.header .logo{
+	text-decoration: none;
+	position: absolute;
+	display: block;
+	font-size: 36px;
+	color: #C60023;
+	left: 60px;
+	top: 35px;
+	font-weight: bold;
+}
+.header .search-con .search-input{
+	width: 500px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	font-size: 15px;
+	border: 2px solid #C60023;
+	outline: none;
+}
+.header .search-con .search-btn{
+	position: absolute;
+	height: 44px;
+}
+/* 面包屑 导航 */
+.crumb{
+	margin-bottom: 15px;
+	height: 50px;
+	line-height: 50px;
+	background: #EEEEEE;
+	color: #888888;
+	font-size: 14px;
+	border-top: 2px solid #C60023;
+}
+/*
+ * css nav-side样式
+ */
+
+/* 导航主题 */
+.nav-side{
+	float: left;
+	width: 130px;
+	min-height: 100px;
+}
+.nav-side .nav-item{
+	line-height: 25px;
+	font-size: 13px;
+}
+/* li样式 */
+.nav-side .nav-item .link{
+	color: #888;
+}
+.nav-side .nav-item.active .link{
+	color:#C60023;
+}
+/* 右侧内容区 */
+.content.with-nav{
+	float: left;
+	width: 950px;
+}
+
+
+/*
+ * 
+ * 修改个人中心样式
+ */
+.form-line{
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+.form-line .label{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+.panel .btn-mini{
+	margin-left: 60px;
+	cursor: pointer;
+}
+.form-line .input{
+    height: 25px;
+    line-height: 25px;
+    width: 200px;
+    font-size: 12px;
+}

@@ -6,6 +6,7 @@
 .banner{
     position: relative; 
     overflow: auto; 
+    border-radius: 5px;
 }
 .banner li { 
     list-style: none; 
