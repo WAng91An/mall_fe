@@ -5,9 +5,8 @@
 	border-bottom:1px solid #DDDDDD ;
 	background: #FFFFFF;
 }
-.nav-simple .logo{
+.nav-simple .logo img{
 	text-decoration: none;
-	font-size: 26px;
-	font-weight: bold;
-	color: #c60023;
+	width: 60px;
+	height:60px;
 }
