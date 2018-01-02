@@ -1,5 +1,16 @@
 
 # Wmall电商网站 （Wmall q前端实现）
+
+
+### 运行时注意
+1. 打开nginx服务器
+2. tomcat mysql
+3. ftp服务器
+3. 内网穿透，natapp
+4. npm run dev_win
+
+
+### 介绍
 - 采用前后端分离架构思想
 - 利用ajax渲染技术
 - 进行调用接口进行页面渲染
