@@ -149,7 +149,7 @@ var page = {
 		}
 	},
 	//加载待付款商品列表
-	loadProductList : function(){
+	loadProductList : function(){ 
 		var productCon		 = document.getElementsByClassName('product-con')[0];
 		var _this			 = this;
 		productCon.innerHTML = "<div class='loading'></div>";
