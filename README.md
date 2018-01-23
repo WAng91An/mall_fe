@@ -49,21 +49,21 @@
 
 ```
 
-     npm install css-loader style-loader --save-dev
+         npm install css-loader style-loader --save-dev
 
-	 npm install extract-text-webpack-plugin@1.0.1 --save-dev
+         npm install extract-text-webpack-plugin@1.0.1 --save-dev
 
-	 npm install  html-webpack-plugin --save-dev
+         npm install  html-webpack-plugin --save-dev
 
-	 npm install html-loader --save-dev
+         npm install html-loader --save-dev
 
-	 npm install url-loader --sava-dev
+         npm install url-loader --sava-dev
 
-     npm install webpack-dev-server --sava-dev
+         npm install webpack-dev-server --sava-dev
 
-     npm install hogan --save
+         npm install hogan --save
 
-	 npm install font-awesome --save
+         npm install font-awesome --save
 
 ```
 
